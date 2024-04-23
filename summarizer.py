@@ -8,4 +8,4 @@ def summarize_text(text):
     "inputs": text,
     }
     response = requests.post(API_URL, headers=headers, json=payload)
-    return response.json()[0]
+    return response.json()[0]['summary_text']
