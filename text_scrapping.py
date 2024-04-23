@@ -30,7 +30,7 @@ def extract_text_from_wikipedia(title_or_url):
 def save_as_txt_file(text, title):
     with open(f"{title}.txt", "w", encoding="utf-8") as file:
         file.write(text)
-    print("Extracted text has been saved to 'extracted_text.txt'")
+    print(f"Extracted text has been saved to '{title}.txt'")
 
 
 def main():
