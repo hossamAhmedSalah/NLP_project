@@ -12,7 +12,10 @@ def summarize_text(text):
     )
 
     summary_ids = model.generate(
-        inputs["input_ids"], attention_mask=inputs["attention_mask"], max_length=1024, early_stopping=True,
+        inputs["input_ids"],
+        attention_mask=inputs["attention_mask"],
+        max_length=1024,
+        early_stopping=True,
     )
 
     summary = tokenizer.decode(summary_ids[0], skip_special_tokens=True)
