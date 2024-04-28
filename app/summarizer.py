@@ -1,8 +1,8 @@
 from transformers import BartTokenizer, BartForConditionalGeneration
 
 # Load pre-trained BART model and tokenizer
-model = BartForConditionalGeneration.from_pretrained("Moatasem22/bart_CNN_NLP")
-tokenizer = BartTokenizer.from_pretrained("Moatasem22/bart_CNN_NLP")
+model = BartForConditionalGeneration.from_pretrained("facebook/bart-large-cnn")
+tokenizer = BartTokenizer.from_pretrained("facebook/bart-large-cnn")
 
 
 def summarize_text(text):
