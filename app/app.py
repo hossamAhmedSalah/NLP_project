@@ -24,7 +24,8 @@ def main():
         )
         if st.button("Let's dig deeper 📄"):
             text, article_title = extract_text_from_wikipedia(title)
-            if text:
+            if isinstance(text, str):
+
                 st.write(
                     f"Text extracted from Wikipedia article: **{article_title.strip()}** 📄"
                 )
@@ -69,7 +70,8 @@ def main():
                         st.table(entity_table)
                     else:
                         st.write("**No entities were found in the text.**")
-
+            else:
+                st.error(str(text), icon="🚨")
     elif choice == "Enter a Wikipedia page URL":
         url = st.text_input(
             "Enter a Wikipedia page URL:",
@@ -77,7 +79,7 @@ def main():
         )
         if st.button("Let's dig deeper 📄"):
             text, article_title = extract_text_from_wikipedia(url)
-            if text:
+            if isinstance(text, str):
                 st.write(
                     f"Text extracted from Wikipedia article: **{article_title.strip()}** 📄"
                 )
@@ -122,6 +124,8 @@ def main():
                         st.table(entity_table)
                     else:
                         st.write("**No entities were found in the text.**")
+            else:
+                st.error(str(text), icon="🚨")
 
 
 if __name__ == "__main__":
