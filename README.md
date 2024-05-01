@@ -19,6 +19,10 @@ To run the application, make sure you have Python installed on your system along
 pip install -r requirements.txt
 streamlit run app.py
 ```
+or 
+
+[CLICK ON ME TO PLAY WITH A REAL LIVE VERSION. 😶‍🌫️ ](https://nlpproject-moatasem.streamlit.app/#entity-recognition)
+
 
 The application will launch in your default web browser. You can then go ahead and interact with it using the provided user interface.
 
