@@ -47,14 +47,15 @@ The `wikipedia_extractor.py` module contains functions for extracting text from 
 
 ## Screenshots
 - **GUI Interface:** This screenshot shows the graphical user interface (GUI) of the application, where users can interact with the various features and functionalities.
-- [](screenshots\GUI.png)
-- **Word Cloud Visualization:** This screenshot displays the word cloud visualization generated from the extracted text, providing a visual representation of the most frequently occurring words.(screenshots/word_cloud.png)
+- [GUI](screenshots/GUI.png)
+- **Word Cloud Visualization:** This screenshot displays the word cloud visualization generated from the extracted text, providing a visual representation of the most frequently occurring words.
+- [Word Cloud](screenshots/word_cloud.png)
 - **Text Summary:** This screenshot presents the summarized version of the extracted text, allowing users to quickly grasp the key points and main ideas.
-- [](screenshots/summary.png)
+- [summary](screenshots/summary.png)
 - **Sentiment Analysis Report:** This screenshot exhibits the sentiment analysis report generated for the extracted text, indicating the overall sentiment (positive, negative, or neutral) and providing insights into the polarity and subjectivity.
-- (screenshots/sentiment_analysis.png)
+- [Sentiment Analysis](screenshots/sentiment_analysis.png)
 - **Named Entity Recognition (NER):** This screenshot showcases the named entity recognition (NER) results, highlighting and categorizing entities such as persons, organizations, locations, etc., identified within the text.
-- [](screenshots/NER.png)
+- [NER](screenshots/NER.png)
 
 Dependencies
 ------------
